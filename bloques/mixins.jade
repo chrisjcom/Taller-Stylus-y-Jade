@@ -1,0 +1,10 @@
+- users = []
+- users.push({nombre: 'Juan', apellido: 'Perez'})
+- users.push({nombre: 'Maria', apellido: 'Alvarez'})
+
+mixin fila(nombre, apellido)
+	li #{nombre} #{apellido}
+
+ul.users
+	for user in users
+		+fila(user.nombre, user.apellido)

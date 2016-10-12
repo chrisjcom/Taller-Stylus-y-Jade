@@ -1,0 +1,14 @@
+colorA = #1256fe
+colorB = #cd58fa
+
+$size
+	width 100px
+	height 50px
+.a
+	color colorA
+.b
+	background colorB
+.c
+	@extend .a
+.d
+	@extend .a, .b, $size
